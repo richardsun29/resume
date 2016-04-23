@@ -10,6 +10,7 @@ $(PDF): $(RESUME)
 
 watch: $(PDF)
 	while inotifywait -qq $(RESUME); do \
+		sleep 0.1; \
 		$(PDFLATEX) $(RESUME); \
 	done
 
