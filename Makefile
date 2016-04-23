@@ -9,7 +9,7 @@ $(PDF): $(RESUME)
 	$(PDFLATEX) $^
 
 watch: $(PDF)
-	while inotifywait -qq $(RESUME); do \
+	while inotifywait -qq -e modify $(RESUME); do \
 		sleep 0.1; \
 		$(PDFLATEX) $(RESUME); \
 	done
