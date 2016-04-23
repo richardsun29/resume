@@ -1,12 +1,15 @@
 \documentclass{article}
 
 \usepackage[margin=1in]{geometry}
+\usepackage{tabularx}
 
 \usepackage{titlesec}
 \titleformat{\section}{\Large\bfseries}{\thesection}{1em}{}[{\titlerule[0.8pt]}]
 
 
 \begin{document}
+  \pagenumbering{gobble}
+
   \begin{center}
     \Huge \textbf{Richard Sun}\\[1ex]
     \large
@@ -18,14 +21,64 @@
 
   \section*{Education}
 
+    \begin{tabularx}{\textwidth}{Xl}
+      \textbf{University of California, Los Angeles} & Expected Graduation: June 2018\\
+      Computer Science, BS &\\
+      GPA: 3.89
+    \end{tabularx}
+
+
   \section*{Coursework}
+
+    \begin{itemize}
+      \item Data Structures and Algorithms
+      \item Computer Organization
+      \item Software Construction
+      \item Operating Systems
+    \end{itemize}
+
 
   \section*{Skills}
 
+    \begin{itemize}
+      \item Familiar with HTML/CSS/Javascript (AngularJS, jQuery, Node.js, SCSS)
+      \item Familiar with C/C++
+      \item Some experience with Ruby, Python, Bash, Java
+      \item Linux, Git, Vim
+    \end{itemize}
+
+
   \section*{Work Experience}
+
+    \textbf{Software Developer}, Daily Bruin (May 2015 - Present)
+    \begin{itemize}
+    \item One of the main developers for the Daily Bruin, UCLA Radio, and several other mobile apps
+    \item Developing a PaaS product that will allow clients to easily create mobile apps
+    \item Create apps using AngularJS and Ionic
+    \end{itemize}
+
 
   \section*{Projects}
 
+    \noindent\textbf{Class Scanner}
+
+      $\bullet$ Python script
+
+    \vspace{1ex}
+
+    \noindent\textbf{FCC}
+
+      $\bullet$ Frontend
+
+    \noindent\textbf{Tetris}
+
+      $\bullet$ Unity
+
+
   \section*{Activites}
+
+    \noindent\textbf{ACM}
+
+      $\bullet$ Robocode workshop
 
 \end{document}
