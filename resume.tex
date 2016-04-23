@@ -3,6 +3,9 @@
 \usepackage[margin=1in]{geometry}
 \usepackage{tabularx}
 
+\usepackage[ampersand]{easylist}
+\newcommand\titlebullets{\ListProperties(Style1*= ,Style2*=$\bullet$ )}
+
 \usepackage{titlesec}
 \titleformat{\section}{\Large\bfseries}{\thesection}{1em}{}[{\titlerule[0.8pt]}]
 
@@ -30,55 +33,54 @@
 
   \section*{Coursework}
 
-    \begin{itemize}
-      \item Data Structures and Algorithms
-      \item Computer Organization
-      \item Software Construction
-      \item Operating Systems
-    \end{itemize}
+    \begin{easylist}[itemize]
+      & Data Structures and Algorithms
+      & Computer Organization
+      & Software Construction
+      & Operating Systems
+    \end{easylist}
 
 
   \section*{Skills}
 
-    \begin{itemize}
-      \item Familiar with HTML/CSS/Javascript (AngularJS, jQuery, Node.js, SCSS)
-      \item Familiar with C/C++
-      \item Some experience with Ruby, Python, Bash, Java
-      \item Linux, Git, Vim
-    \end{itemize}
+    \begin{easylist}[itemize]
+      & Familiar with HTML/CSS/Javascript (AngularJS, jQuery, Node.js, SCSS)
+      & Familiar with C/C++
+      & Some experience with Ruby, Python, Bash, Java
+      & Linux, Git, Vim
+    \end{easylist}
 
 
   \section*{Work Experience}
 
-    \textbf{Software Developer}, Daily Bruin (May 2015 - Present)
-    \begin{itemize}
-    \item One of the main developers for the Daily Bruin, UCLA Radio, and several other mobile apps
-    \item Developing a PaaS product that will allow clients to easily create mobile apps
-    \item Create apps using AngularJS and Ionic
-    \end{itemize}
+    \begin{easylist} \titlebullets
+      & \textbf{Software Developer}, Daily Bruin (May 2015 - Present)
+        && One of the main developers for the Daily Bruin, UCLA Radio, and several other mobile apps
+        && Developing a PaaS product that will allow clients to easily create mobile apps
+        && Create apps using AngularJS and Ionic
+    \end{easylist}
 
 
   \section*{Projects}
 
-    \noindent\textbf{Class Scanner}
+    \begin{easylist} \titlebullets
+      & \textbf{Class Scanner}
+        && Python script
 
-      $\bullet$ Python script
+      & \textbf{FCC}
+        && Frontend
 
-    \vspace{1ex}
+      & \textbf{Tetris}
+        && Unity
 
-    \noindent\textbf{FCC}
-
-      $\bullet$ Frontend
-
-    \noindent\textbf{Tetris}
-
-      $\bullet$ Unity
+    \end{easylist}
 
 
   \section*{Activites}
 
-    \noindent\textbf{ACM}
-
-      $\bullet$ Robocode workshop
+    \begin{easylist} \titlebullets
+      & ACM
+        && Robocode workshop
+    \end{easylist}
 
 \end{document}

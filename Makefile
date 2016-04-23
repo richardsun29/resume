@@ -8,7 +8,7 @@ all: $(PDF)
 $(PDF): $(RESUME)
 	$(PDFLATEX) $^
 
-watch:
+watch: $(PDF)
 	while inotifywait -qq $(RESUME); do \
 		$(PDFLATEX) $(RESUME); \
 	done
