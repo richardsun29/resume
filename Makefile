@@ -9,9 +9,9 @@ $(PDF): $(RESUME)
 	$(PDFLATEX) $^
 
 watch: $(PDF)
-	while inotifywait -qq -e modify $(RESUME); do \
+	while inotifywait -qq -e modify -e move_self $(RESUME); do \
 		sleep 0.1; \
-		$(PDFLATEX) $(RESUME); \
+		$(PDFLATEX) $(RESUME) || true; \
 	done
 
 clean:
