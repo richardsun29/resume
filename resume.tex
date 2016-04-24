@@ -8,7 +8,9 @@
 \usepackage{multicol}
 
 \usepackage[ampersand]{easylist}
-  \newcommand\titlebullets{\ListProperties(Style1*= ,Style2*=$\bullet$ )}
+  \newcommand\titlebullets{
+    \ListProperties(Style1**=\bfseries,Style1*= ,Style2*=$\bullet$ )
+  }
 
 \usepackage{titlesec}
   \titleformat{\section}
@@ -55,37 +57,39 @@
 
   \begin{multicols}{2}
     \begin{easylist} \titlebullets
-      & \textbf{Languages}
-        && Proficient: C/C++, HTML/CSS/Javascript, Bash
+      & Languages
+        && C/C++, HTML/CSS/Javascript, Bash
         && Intermediate: Python, Ruby
 
-      & \textbf{Tools}
+      \columnbreak
+
+      & Tools
         && Linux
         && Git
         && AngularJS, jQuery
+
     \end{easylist}
   \end{multicols}
 
   \section*{Work Experience}
 
     \begin{easylist} \titlebullets
-      & \textbf{Software Developer}, Daily Bruin (May 2015 - Present)
-        && One of the main developers for the Daily Bruin, UCLA Radio, and several other mobile apps
-        && Developing a PaaS product that will allow clients to easily create mobile apps
-        && Create apps using AngularJS and Ionic
+      & Development Lead/IT \textnormal{$|$ UCLA Student Media (May 2015 - Present)}
+        && Developed several hybrid mobile apps using AngularJS and Ionic
+        && Help manage servers and Digital Ocean droplets that run our websites
     \end{easylist}
 
 
   \section*{Projects}
 
     \begin{easylist} \titlebullets
-      & \textbf{Class Scanner}
+      & Class Scanner
         && Python script
 
-      & \textbf{FCC}
+      & FCC
         && Frontend
 
-      & \textbf{Tetris}
+      & Tetris
         && Unity
 
     \end{easylist}
