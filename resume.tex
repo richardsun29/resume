@@ -1,9 +1,6 @@
 \documentclass{article}
 
-\newcommand{\margin}{1in}
-\usepackage[margin=\margin]{geometry}
-
-\usepackage{tabularx}
+\usepackage[margin=1in]{geometry}
 
 \usepackage{multicol}
 
@@ -20,6 +17,7 @@
     {\Large\bfseries}{\thesection}{1em}{}[{\titlerule[0.8pt]}]
 
 
+
 \begin{document}
   \pagenumbering{gobble}
 
@@ -34,11 +32,10 @@
 
   \section*{Education}
 
-    \begin{tabularx}{\textwidth}{Xl}
-      \textbf{University of California, Los Angeles} & Expected Graduation: June 2018\\
+      \textbf{University of California, Los Angeles}
+      \hfill Expected Graduation: June 2018\\
       Computer Science, BS\\
       GPA: 3.89
-    \end{tabularx}
 
 
   \section*{Coursework}
@@ -79,7 +76,7 @@
 
     \begin{easylist} \titleparagraph
       & Development Lead/IT
-          \textnormal{$|$ UCLA Student Media (May 2015 - Present)}
+          \textnormal{$|$ UCLA Student Media \hfill May 2015 - Present}
         && Developed several hybrid mobile apps using AngularJS and Ionic
         && Help manage servers and Digital Ocean droplets that run our websites
     \end{easylist}
