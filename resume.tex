@@ -1,7 +1,7 @@
 \documentclass{article}
 
-
-\usepackage[margin=1in]{geometry}
+\newcommand{\margin}{1in}
+\usepackage[margin=\margin]{geometry}
 
 \usepackage{tabularx}
 
@@ -10,6 +10,9 @@
 \usepackage[ampersand]{easylist}
   \newcommand\titlebullets{
     \ListProperties(Style1**=\bfseries,Style1*= ,Style2*=$\bullet$ )
+  }
+  \newcommand\titleparagraph{
+    \ListProperties(Style1**=\bfseries,Style*= )
   }
 
 \usepackage{titlesec}
@@ -55,26 +58,28 @@
 
   \section*{Skills}
 
-  \begin{multicols}{2}
-    \begin{easylist} \titlebullets
-      & Languages
-        && C/C++, HTML/CSS/Javascript, Bash
-        && Intermediate: Python, Ruby
+    \vspace{-2.5ex}
+    \begin{multicols}{2}
+      \begin{easylist} \titlebullets
+        & Languages
+          && C/C++, HTML/CSS/Javascript, Bash
+          && Intermediate: Python, Ruby
 
-      \columnbreak
+        \columnbreak
 
-      & Tools
-        && Linux
-        && Git
-        && AngularJS, jQuery
+        & Tools
+          && Linux
+          && Git
+          && AngularJS, jQuery
 
-    \end{easylist}
-  \end{multicols}
+      \end{easylist}
+    \end{multicols}
 
   \section*{Work Experience}
 
-    \begin{easylist} \titlebullets
-      & Development Lead/IT \textnormal{$|$ UCLA Student Media (May 2015 - Present)}
+    \begin{easylist} \titleparagraph
+      & Development Lead/IT
+          \textnormal{$|$ UCLA Student Media (May 2015 - Present)}
         && Developed several hybrid mobile apps using AngularJS and Ionic
         && Help manage servers and Digital Ocean droplets that run our websites
     \end{easylist}
@@ -82,24 +87,24 @@
 
   \section*{Projects}
 
-    \begin{easylist} \titlebullets
+    \begin{easylist} \titleparagraph
+      & AppGet
+        && A PaaS application designed to allow users to create and deploy
+           mobile apps in minutes, without writing any code. We provide fully
+           functional templates that clients can customize through a web
+           interface. We used AngularJS and the Ionic Framework to make use of
+           their templating system.
+
       & Class Scanner
-        && Python script
+        && Python script that checks for open seats in a class. It parses a
+           HTML page using BeautifulSoup and sends notifications via the
+           Slackbot API.
 
-      & FCC
-        && Frontend
+      & Robocode Workshop
+        && Hosted a workshop for ACM-AI, where I gave an introduction to
+           Robocode, a Java robot battle simulator. I made a simple robot that
+           predicted enemy movement and dodged bullets.
 
-      & Tetris
-        && Unity
-
-    \end{easylist}
-
-
-  \section*{Activites}
-
-    \begin{easylist} \titlebullets
-      & ACM
-        && Robocode workshop
     \end{easylist}
 
 \end{document}

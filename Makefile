@@ -10,7 +10,7 @@ $(PDF): $(RESUME)
 
 watch: $(PDF)
 	while inotifywait -qq -e modify -e move_self $(RESUME); do \
-		sleep 0.1; \
+		sleep 0.3; \
 		$(PDFLATEX) $(RESUME) || true; \
 	done
 
