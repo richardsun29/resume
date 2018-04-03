@@ -6,6 +6,8 @@
 
 \usepackage{tabto}
 
+\usepackage{hyperref}
+
 \usepackage[ampersand]{easylist}
   \newcommand\titlebullets{
     \ListProperties(Style1**=\bfseries,Style1*= ,Style2*=$\bullet$ )
@@ -27,24 +29,28 @@
   \begin{center}
     \Huge \textbf{Richard Sun}\\[1ex]
     \large
-    richardsun29@ucla.edu $\bullet$
-    (619) 621-1012 $\bullet$
-    github.com/richardsun29
+    \href{mailto:richardsun29@ucla.edu}{richardsun29@ucla.edu}
+    ~$\bullet$~
+    (619) 621-1012
+    ~$\bullet$~
+    \href{https://github.com/richardsun29}{github.com/richardsun29}
   \end{center}
 
 
   \section*{Education}
 
-      \textbf{University of California, Los Angeles}
-      \hfill Expected Graduation: June 2018\\
-      Computer Science, BS\\
-      GPA: 3.9
+    \begin{easylist} \titleparagraph
+      & University of California, Los Angeles
+            \hfill \textnormal{Expected Graduation: June 2018}
+        && Computer Science, BS
+        && GPA: 3.9
+    \end{easylist}
 
 
   \section*{Work Experience}
 
-    \begin{easylist} \titleparagraph
-      & Software Development Intern
+    \begin{easylist} \titlebullets
+      & Software Engineering Intern
           \textnormal{$|$ Symantec \hfill June 2016 - Nov 2016,
                                           June 2017 - Sept 2017}
         && Worked on SONAR, a C++ Windows driver that provides heuristic
@@ -54,7 +60,7 @@
 
       & Development Lead \& IT
           \textnormal{$|$ UCLA Student Media \hfill May 2015 - Present}
-        && Full stack development using Django, AngularJS, Ionic, React Native
+        && Full stack development using Django, Angular, Ionic, React Native
         && Manage servers and Digital Ocean droplets that run over 10 websites
 
     \end{easylist}
@@ -62,7 +68,7 @@
 
   \section*{Projects}
 
-    \begin{easylist} \titleparagraph
+    \begin{easylist} \titlebullets
 
       & UCLA Maps
         && Led development on a Django backend that does outdoor and indoor
@@ -73,10 +79,13 @@
 
       & AppGet
         && A PaaS application designed to allow users to create and deploy
-           mobile apps in minutes, without writing any code. We provide fully
+           mobile apps in minutes, without writing any code. It provides fully
            functional components that clients can customize through a web
-           interface. We used AngularJS and the Ionic Framework to make use of
-           their templating system.
+           interface.
+        && Built with Angular and the Ionic Framework to make use of their
+           templating system.
+        && Used this platform to create over 10 apps for UCLA and other
+           universities.
 
 %      & Class Scanner
 %        && Python program that checks for open seats in a class. It parses a
@@ -87,45 +96,69 @@
 %           helped me understand object-oriented and event-driven programming
 %           better.
 
-      & Robocode Workshop
-        && Hosted a workshop for ACM on Robocode, a Java robot battle
-           simulator. Demonstrated a simple robot that predicted enemy movement
-           to dodge bullets.
+%      & Robocode Workshop
+%        && Hosted a workshop for ACM on Robocode, a Java robot battle
+%           simulator. Demonstrated a simple robot that predicted enemy
+%           movement to dodge bullets.
 
     \end{easylist}
+
+
+  \section*{Skills}
+
+    \begin{easylist} \titleparagraph
+      & Languages: \textnormal{%
+        C++,
+        Javascript,
+        Python,
+        C,
+        Java,
+        HTML/CSS
+      }
+
+      & Tools: \textnormal{%
+        MySQL,
+        Postgres,
+        Django,
+        Angular,
+        React,
+        Linux,
+        Git
+      }
+    \end{easylist}
+
+%    \vspace{-2.5ex}
+%    \begin{multicols}{2}
+%      \begin{easylist} \titlebullets
+%        & Languages
+%          && C++                    \tab $\bullet$ C
+%          && Python                 \tab $\bullet$ Javascript
+%
+%        \columnbreak
+%
+%        & Tools
+%          && MySQL, Django          \tab $\bullet$ Linux
+%          && Angular, React         \tab $\bullet$ Git
+%
+%      \end{easylist}
+%    \end{multicols}
 
 
   \section*{Coursework}
 
     \vspace{-2.5ex}
-    \begin{multicols}{2}
+    \begin{multicols}{3}
       \begin{easylist}[itemize]
         & Software Engineering
         & Operating Systems
+        & Algorithms
         & Databases
+        & Web Applications
+        & Networks
         & Programming Languages
-        & Networking
-        & Data Structures and Algorithms
+        & Machine Learning
       \end{easylist}
     \end{multicols}
 
-
-  \section*{Skills}
-
-    \vspace{-2.5ex}
-    \begin{multicols}{2}
-      \begin{easylist} \titlebullets
-        & Languages
-          && C++                    \tab $\bullet$ C
-          && Python                 \tab $\bullet$ Javascript
-
-        \columnbreak
-
-        & Tools
-          && MySQL, Django          \tab $\bullet$ Linux
-          && AngularJS, React       \tab $\bullet$ Git
-
-      \end{easylist}
-    \end{multicols}
 
 \end{document}
