@@ -1,4 +1,4 @@
 *.swp
 *.aux
 *.log
-*.log
+*.out
